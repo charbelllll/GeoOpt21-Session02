@@ -1,6 +1,5 @@
-#AIA Module at MaCAD, IaaC, directed by David Andrés León
-#charbel baliss
-#importing libraries and 'geometry' file
+#excercise by chabel baliss
+
 from flask import Flask
 import ghhops_server as hs
 import rhino3dm as rg
