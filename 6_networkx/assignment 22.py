@@ -17,8 +17,8 @@ hops = hs.Hops(app)
     inputs=[
     ],
     outputs=[
-       hs.HopsPoint("Nodes","N","List of Nodes ", hs.HopsParamAccess.LIST),
-       hs.HopsCurve("Edges","E","List of Edges ", hs.HopsParamAccess.LIST)
+       hs.HopsPoint("Nodes","N","  Nodes list ", hs.HopsParamAccess.LIST),
+       hs.HopsCurve("Edges","E"," edges List ", hs.HopsParamAccess.LIST)
     ]
 )
 def createSpiralGraph():
@@ -30,10 +30,6 @@ def createSpiralGraph():
     edges = geo.getEdges(GW) 
 
     return nodes, edges
-
-
-
-
 
 if __name__== "__main__":
     app.run(debug=True)

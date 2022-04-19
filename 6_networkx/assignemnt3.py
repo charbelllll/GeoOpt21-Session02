@@ -14,13 +14,13 @@ hops = hs.Hops(app)
     "/createGraph",
     name = "Create Graph",
     inputs=[
-        hs.HopsInteger("Count X", "X", "Number of node in X", hs.HopsParamAccess.ITEM, default= 1),
-        hs.HopsInteger("Count Y", "Y", "Number of node in Y", hs.HopsParamAccess.ITEM, default= 1),
+        hs.HopsInteger("Count X", "X", "node in X", hs.HopsParamAccess.ITEM, default= 1),
+        hs.HopsInteger("Count Y", "Y", " node in Y", hs.HopsParamAccess.ITEM, default= 1),
         hs.HopsInteger("Layout", "L", "Layout to order Nodes", hs.HopsParamAccess.ITEM, default= 0),
     ],
     outputs=[
-       hs.HopsPoint("Nodes","N","List of Nodes ", hs.HopsParamAccess.LIST),
-       hs.HopsCurve("Edges","E","List of Edges ", hs.HopsParamAccess.LIST)
+       hs.HopsPoint("Nodes","N","List  Nodes ", hs.HopsParamAccess.LIST),
+       hs.HopsCurve("Edges","E","List Edges ", hs.HopsParamAccess.LIST)
     ]
 )
 def createGraph(X, Y, layout):
